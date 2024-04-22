@@ -7,6 +7,8 @@
 
 >这是我的个人主页
 
+>源码来自[dmego](https://github.com/dmego/home.github.io)
+
 >衍生自 [Vno](https://github.com/onevcat/vno-jekyll) Jekyll 主题
 
 >页面部分加载效果借鉴于 [Mno](https://github.com/mcc108/mno) Ghost 主题
