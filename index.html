@@ -6,15 +6,26 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Dmego Home">
-    <meta name="keywords" content="Dmego,Homepage">
-    <meta name="author" content="Dmego">
-    <title>Dmego Home</title>
-    <link rel="stylesheet" type="text/css" href="https://unpkg.com/dmego-home-page@latest/assets/css/onlinewebfonts.css"/>
-    <link rel="stylesheet" type="text/css" href="https://unpkg.com/dmego-home-page@latest/assets/css/vno.css">
-    <link rel="stylesheet" type="text/css" href="https://unpkg.com/dmego-home-page@latest/assets/css/iconfont.css">
-    <link rel="apple-touch-icon" href="https://unpkg.com/dmego-home-page@latest/apple-touch-icon.png">
-    <link rel="icon" href="https://unpkg.com/dmego-home-page@latest/favicon.ico">
+    <meta name="description" content="Midsass Home">
+    <meta name="keywords" content="Midsass,Homepage">
+    <meta name="author" content="wchen">
+    <title>Midsass Home</title>
+    <link rel="stylesheet" type="text/css" href="./assets/css/onlinewebfonts.css"/>
+    <link rel="stylesheet" type="text/css" href="./assets/css/vno.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/iconfont.css">
+    <!-- <link rel="stylesheet" type="text/css" href="/assets/css/iconfont.css">
+    <link rel="stylesheet" type="text/css" href="/assets/css/vno.css">
+    <link rel="stylesheet" type="text/css" href="/assets/css/onlinewebfonts.css"> -->
+    <link rel="apple-touch-icon" href="./apple-touch-icon.png">
+    <link rel="icon" href="./favicon.ico">
+
+    <style>
+        .icon {
+            margin-top: 5px;
+            width: 22px;
+            height: 20px;
+        }
+    </style>
 </head>
 
 <body>
@@ -26,27 +37,25 @@
         <div class="panel-main">
             <div class="panel-main__inner panel-inverted">
                 <div class="panel-main__content">
-                    <div class="ih-item circle effect right_to_left">            
-                        <a href="#" title="" class="blog-button">
-                            <div class="img"><img src="https://unpkg.com/dmego-home-page@latest/assets/img/logo3.jpg" alt="img" class="js-avatar iUp profilepic"></div>
+                    <div class="ih-item circle effect right_to_left">
+                        <a href="#" title="" class="blog-button" onclick="changeImage();">
+                            <div class="img">
+                                <img id="main-image" src="./assets/img/baby-1.jpg" alt="img" class="js-avatar iUp profilepic">
+                            </div>
                             <div class="info iUp">
                                 <div class="info-back">
                                     <h2> 
-                                        
-                                            Fighting
-                                        
+                                        Fighting
                                     </h2>
                                     <p>
-                                        
-                                            2024 · 坚持
-                                        
+                                        <span id="change-text">2024 · 坚持</span>
                                     </p>
                                 </div>
                             </div>
                         </a>
                     </div>
                     <h1 class="panel-cover__title panel-title iUp">
-                        <a href="#" title="Dmego Home">Dmego</a>
+                        <a href="#" title="Midsass Home">Midsass</a>
                     </h1>
                     <p class="panel-cover__subtitle panel-subtitle iUp">Code Create Life</p>
                     <hr class="panel-cover__divider iUp" />
@@ -62,14 +71,18 @@
                                         <a href="/" class="blog-button">首页</a>
                                     </li>
                                     <li class="navigation__item">
-                                        <a href="https://dmego.cn" class="blog-button" target="_blank">博客</a>
+                                        <a href="https://www.midjourneyers.cn" class="blog-button" target="_blank">绘画</a>
                                     </li>
                                     <li class="navigation__item">
-                                        <a href="https://r.dmego.cn" class="blog-button" target="_blank">简历</a>
+                                        <a href="https://doc.midjourneyers.com" class="blog-button" target="_blank">教程</a>
                                     </li>
                                     <li class="navigation__item">
-                                        <a href="https://dmego.cn/about/" class="blog-button" target="_blank">关于</a>
+                                        <a href="https://lobechat.midjourneyers.cn/welcome" class="blog-button" target="_blank">聊天</a>
                                     </li>
+                                    <li class="navigation__item">
+                                        <a href="https://resume.56781234.xyz/zero/java" class="blog-button" target="_blank">简历</a>
+                                    </li>
+                                 
                                 </ul>
                             </nav>
                         </div>
@@ -77,29 +90,44 @@
                             <nav class="cover-navigation navigation--social">
                                 <ul class="navigation">
                                     <li class="navigation__item">
-                                        <a href="https://github.com/dmego/" title="github" target="_blank">
-                                            <i class='social iconfont icon-github'></i>
-                                            <span class="label">github</span>
+                                        <a href="https://github.com/dfish01" title="Github" target="_blank">
+                                            <!-- <i class='social iconfont icon-mayun'></i> -->
+                                            <img src="assets/svg/github.svg" type="image/svg+xml" class="icon"></img>
+                                            <span class="label">Github</span>
                                         </a>
-                                    </li>
-                                    <li class="navigation__item">
-                                        <a href="http://www.cnblogs.com/dmego/" title="cnblogs" target="_blank">
-                                            <i class='social iconfont icon-cnblogs'></i>
-                                            <span class="label">cnblogs</span>
-                                        </a>
-                                    </li>
 
+                                    </li>
                                     <li class="navigation__item">
-                                        <a href="https://www.zhihu.com/people/dmego/" title="zhihu" target="_blank">
-                                            <i class='social iconfont icon-zhihu'></i>
-                                            <span class="label">zhihu</span>
+                                        <a href="https://www.nodeseek.com/space/8517#/general" title="nodeSeek" target="_blank">
+                                            <!-- <i class='social iconfont icon-mayun'></i> -->
+                                            <img src="assets/svg/web.svg" type="image/svg+xml" class="icon"></img>
+                                            <span class="label">nodeSeek</span>
                                         </a>
+
+                                    </li>
+                                    <li class="navigation__item">
+                                        <a href="tencent://message/?uin=984794961" title="QQ" target="_blank">
+                                            <!-- <i class='social iconfont icon-mayun'></i> -->
+                                            <img src="assets/svg/qq.svg" type="image/svg+xml" class="icon"></img>
+                                            <span class="label">QQ</span>
+                                        </a>
+                                    </li>
+                                    <li class="navigation__item">
+                                        <a href="https://t.me/mid_sass" title="telegram" target="_blank">
+                                            <!-- <i class='social iconfont icon-mayun'></i> -->
+                                            <img src="assets/svg/telegram.svg" type="image/svg+xml" class="icon"></img>
+                                            
+                                            <span class="label">telegram</span>
+                                        </a>
+
                                     </li>
                                     <li class="navigation__item">
                                         <!-- 加密的邮箱地址, 请自行修改, 或者改用下方的明文方式 -->
-                                        <a href="javascript:decryptEmail('ZG1lYWdvQGdtYWlsLmNvbQ==');" title="email">
-                                        <!-- <a href="test@test.com" title="email"> -->
-                                            <i class='social iconfont icon-email'></i>
+                                        <!-- <a href="javascript:decryptEmail('ZG1lYWdvQGdtYWlsLmNvbQ==');" title="email"> -->
+                                        <a href="mailto:dfish0712@163.com" title="email">
+                                            <!-- <i class='social iconfont icon-email'></i> -->
+                                            <img src="assets/svg/email.svg" type="image/svg+xml" class="icon"></img>
+                                            
                                             <span class="label">email</span>
                                         </a>
                                     </li>
@@ -122,7 +150,21 @@
             </p>
         </div>
     </header>
-    <script type="text/javascript" src="https://unpkg.com/dmego-home-page@latest/assets/js/main.js"></script>
+    <script type="text/javascript" src="./assets/js/main.js"></script>
     <script type="text/javascript" src="./assets/json/images.json?cb=getBingImages"></script>
+    <script>
+        function changeImage() {
+            var imgElement = document.getElementById('main-image');
+            var textElement = document.getElementById('change-text');
+            if (imgElement.src.includes('baby-1.jpg')) {
+                imgElement.src = './assets/img/baby-2.jpg';
+                textElement.textContent = '2024 · 坚持';
+            } else {
+                imgElement.src = './assets/img/baby-1.jpg';
+                textElement.textContent = '2024 · 坚持';
+            }
+        }
+    </script>
 </body>
+
 </html>
